@@ -4,10 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Продвинутый JS в браузере. Лекция 6. Задача 1.</title>
 </head>
 <body>
-<h1>Hello, from Netology!</h1>
-<img src="img/netology.svg" alt="Netology Logo">
+  <div id="tasks">
+    <div id="todo" class="column-tasks">
+      <p>TODO</p>
+      <div class="item-tasks"></div>
+      <div class="add-task button">+ Add another card</div>
+      <div class="input-task hidden">
+        <textarea name="text-task" id="text-task"></textarea>
+        <span class="button-add-task button">Add Card</span>
+        <span class="button-cancel-task button">&#x2716;</span>
+      </div>
+    </div>
+    <div id="in-progress" class="column-tasks">
+      <p>IN PROGRESS</p>
+      <div  class="item-tasks"></div>
+      <div class="add-task  button">+ Add another card</div>
+      <div class="input-task hidden">
+        <textarea name="text-task" id="text-task"></textarea>
+        <span class="button-add-task button">Add Card</span>
+        <span class="button-cancel-task button">&#x2716;</span>
+      </div>
+    </div>
+    <div id="done" class="column-tasks">
+      <p>DONE</p>
+      <div  class="item-tasks"></div>
+      <div class="add-task  button">+ Add another card</div>
+      <div class="input-task hidden">
+        <textarea name="text-task" id="text-task"></textarea>
+        <span class="button-add-task button">Add Card</span>
+        <span class="button-cancel-task button">&#x2716;</span>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
