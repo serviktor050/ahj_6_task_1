@@ -1,4 +1,4 @@
-export default class LocalStorage {
+export default class Storage {
   save(data) {
     localStorage.setItem('tasks', JSON.stringify(data));
   }

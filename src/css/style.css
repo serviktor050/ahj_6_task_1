@@ -71,3 +71,7 @@
     background: whitesmoke;
     cursor: grabbing;
 }
+
+.hidden {
+    display: none;
+}

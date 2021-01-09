@@ -1,9 +1,9 @@
 import initData from './initData.js';
 import WorkDislay from './classes/WorkDisplay.js';
-import LocalStorage from './classes/LocalStorage.js';
+import Storage from './classes/Storage.js';
 
 const workDisplay = new WorkDislay();
-const localStorage = new LocalStorage();
+const storage = new Storage();
 
 let draggedElement = null;
 let ghostOfElement = null;
@@ -51,11 +51,11 @@ function toObjTasks() {
     objTasks.doneObJ.push(item.textContent.replace(' ✖', ''));
   }
 
-  localStorage.save(objTasks);
+  storage.save(objTasks);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const localStorageData = JSON.parse(localStorage.load());
+  const localStorageData = JSON.parse(storage.load());
   if (localStorageData !== null) {
     workDisplay.initTasks(localStorageData);
   } else {

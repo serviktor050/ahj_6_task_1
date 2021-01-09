@@ -10,7 +10,7 @@ export default class WorkDisplay {
     itemTask.className = 'item-task';
     itemTask.innerHTML = `
         ${value}
-        <div class="delete-task hidden">&#x2716;</div>
+        <div class="delete-task">✖</div>
         `;
     parentElement.append(itemTask);
   }
@@ -22,8 +22,8 @@ export default class WorkDisplay {
   }
 
   initTasks(data) {
-    this.addArrayTasks(this.todo, data.todo);
-    this.addArrayTasks(this.inProgress, data.inProgress);
-    this.addArrayTasks(this.done, data.done);
+    this.addArrayTasks(this.todo, data.todoObJ);
+    this.addArrayTasks(this.inProgress, data.inProgressObJ);
+    this.addArrayTasks(this.done, data.doneObJ);
   }
 }
