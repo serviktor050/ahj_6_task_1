@@ -12,6 +12,8 @@
         "sourceType": "module"
     },
     "rules": {
-        "import/extensions":["error","ignorePackages"]
+        "import/extensions":["error","ignorePackages"],
+        "no-restricted-syntax": 0,
+        "class-methods-use-this": 0
     }
 }

@@ -52,3 +52,22 @@
     margin-top: 10px;
     padding: 5px 0;
 }
+
+.delete-task {
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dragged {
+    border-radius: 5px;
+    position: absolute;
+    z-index: 5;
+    pointer-events: none;
+    background: whitesmoke;
+    cursor: grabbing;
+}
