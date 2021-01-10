@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.button {
+    cursor: pointer;
+}
+
+#tasks {
+    display: flex;
+    align-items: start;
+}
+
+.column-tasks {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: #9bafe4;
+  }
+
+.column-tasks:last-child {
+    margin-right: 0;
+}
+
+.item-tasks {
+    min-height: 15px;
+}
+
+.item-task {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: grabbing;
+    position: relative;
+}
+
+.item-task:last-child {
+    margin-bottom: 0;
+}
+
+.item-task:hover > .del-task {
+    display: block;
+}
+
+.input-task, .add-task {
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.delete-task {
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dragged {
+    border-radius: 5px;
+    position: absolute;
+    z-index: 5;
+    pointer-events: none;
+    background: whitesmoke;
+    cursor: grabbing;
+}
+
+.hidden {
+    display: none;
+}
+
