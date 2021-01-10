@@ -56,10 +56,11 @@ function toObjTasks() {
 
 document.addEventListener('DOMContentLoaded', () => {
   const localStorageData = JSON.parse(storage.load());
-  if (localStorageData !== null) {
-    workDisplay.initTasks(localStorageData);
-  } else {
+  if (localStorageData.todoObJ.length === 0 && localStorageData.inProgressObJ.length === 0
+    && localStorageData.doneObJ.length === 0) {
     workDisplay.initTasks(initData());
+  } else {
+    workDisplay.initTasks(localStorageData);
   }
 });
 
